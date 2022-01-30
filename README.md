@@ -21,6 +21,7 @@ public void SomeFunction()
 {
   TimerManager.Schedule(3f,()=>{ GD.Print("Time is up!"); });
   TimerManager.Schedule(4f, this, (t)=>{ t.Visible = false; });
+  TimerManager.Schedule(2f, DoStuff());
 }
 
 ```
